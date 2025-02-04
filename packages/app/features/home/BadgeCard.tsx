@@ -21,7 +21,7 @@ const BadgeCard = () => {
     },
   ]
   return (
-    <Card padding={'$4'}>
+    <Card padding={'$4'} maxW={'fit-content'}>
       <XStack gap={'$4'}>
         {cardData.map(({ title, icon }, index) => (
           <YStack items={'center'} gap={'$2'} key={index}>

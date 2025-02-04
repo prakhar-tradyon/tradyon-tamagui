@@ -12,7 +12,9 @@ const Main = () => {
     >
       <XStack
         background={'white'}
-        padding={'$8'}
+        $gtSm={{ flexDirection: 'row', padding: '$8' }}
+        $xs={{ flexDirection: 'column', padding: '$4', items: 'center', gap: '$2' }}
+        $gtXs={{ flexDirection: 'column', padding: '$4', items: 'center', gap: '$2' }}
         width={'100%'}
         gap={'$8'}
         justify={'space-evenly'}
@@ -26,11 +28,11 @@ const Main = () => {
           aspectRatio={1}
         />
         <YStack gap={'$4'}>
-          <YStack>
-            <H1 letterSpacing={'$9'}>Black Pepper</H1>
+          <YStack items={'center'} $gtSm={{ items: 'flex-start' }}>
+            <H1 letterSpacing={'$9'} fontSize={'$9'}>Black Pepper</H1>
             <Text color={'#8f8f8f'}>KMG Robust</Text>
           </YStack>
-          <XStack gap={'$4'}>
+          <XStack gap={'$4'} display="none" $gtSm={{ display: 'flex' }}>
             <Button theme={'accent'}>Contact</Button>
             <Button theme={'green'}>Request Quote</Button>
           </XStack>
