@@ -3,7 +3,13 @@ import { Heart, ListPlus } from '@tamagui/lucide-icons'
 
 const BottomBar = () => {
   return (
-    <XStack $gtSm={{ display: 'none' }} padding="$3" justify={'space-between'} width={'100%'}>
+    <XStack
+      $gtSm={{ display: 'none' }}
+      padding="$3"
+      justify={'space-between'}
+      width={'100%'}
+      background={'$background'}
+    >
       <XStack gap={'$2'}>
         <Button theme={'green'} icon={Heart} size={'$3'} />
         <Button theme={'green'} icon={ListPlus} size={'$3'} />

@@ -11,7 +11,7 @@ const Main = () => {
       style={{ position: 'relative' }}
     >
       <XStack
-        background={'white'}
+        background={'$background'}
         $gtSm={{ flexDirection: 'row', padding: '$8' }}
         $xs={{ flexDirection: 'column', padding: '$4', items: 'center', gap: '$2' }}
         $gtXs={{ flexDirection: 'column', padding: '$4', items: 'center', gap: '$2' }}
@@ -29,7 +29,9 @@ const Main = () => {
         />
         <YStack gap={'$4'}>
           <YStack items={'center'} $gtSm={{ items: 'flex-start' }}>
-            <H1 letterSpacing={'$9'} fontSize={'$9'}>Black Pepper</H1>
+            <H1 letterSpacing={'$9'} fontSize={'$9'}>
+              Black Pepper
+            </H1>
             <Text color={'#8f8f8f'}>KMG Robust</Text>
           </YStack>
           <XStack gap={'$4'} display="none" $gtSm={{ display: 'flex' }}>
