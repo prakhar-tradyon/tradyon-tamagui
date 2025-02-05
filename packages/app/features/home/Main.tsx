@@ -7,6 +7,7 @@ const Main = () => {
       background={'#f1f1f1'}
       flex={1}
       width={'100%'}
+      $gtMd={{ maxW: '1080px' }}
       items={'center'}
       style={{ position: 'relative' }}
     >
